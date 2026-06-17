@@ -13,6 +13,9 @@ class NotesViewBody extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadiusGeometry.circular(30),
+            ),
             context: context,
             builder: (context) {
               return AddNoteButtonSheet();
