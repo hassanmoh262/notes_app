@@ -8,7 +8,13 @@ class AddNoteButtonSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(32),
-      child: Column(children: [CustomTextField()]),
+      child: Column(
+        children: [
+          CustomTextField(hint: "title"),
+          SizedBox(height: 10),
+          CustomTextField(hint: "title", maxLines: 5),
+        ],
+      ),
     );
   }
 }
