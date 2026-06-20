@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/Custom_app_bar.dart';
 import 'package:notes_app/widgets/Notes_list_view.dart';
-import 'package:notes_app/widgets/add_note_button_sheet.dart';
+import 'package:notes_app/widgets/add_note_bottom_sheet.dart';
 import 'package:notes_app/widgets/notes_item.dart';
 
 class NotesViewBody extends StatelessWidget {
@@ -18,7 +18,7 @@ class NotesViewBody extends StatelessWidget {
             ),
             context: context,
             builder: (context) {
-              return AddNoteButtonSheet();
+              return AddNoteBottomSheet();
             },
           );
         },
