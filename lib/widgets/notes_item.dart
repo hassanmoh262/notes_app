@@ -40,7 +40,13 @@ class NotesItem extends StatelessWidget {
                 notes.subtitle,
                 style: TextStyle(color: Colors.black.withValues(alpha: .5)),
               ),
-              trailing: Icon(Icons.delete, color: Colors.black),
+              trailing: IconButton(
+                onPressed: () {
+                  notes.delete();
+                },
+                icon: Icon(Icons.delete),
+                color: Colors.black,
+              ),
             ),
 
             Text(notes.date, style: TextStyle(color: Colors.black)),
