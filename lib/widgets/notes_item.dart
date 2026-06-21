@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/views/edit_note_view.dart';
 
 class NotesItem extends StatelessWidget {
   NotesItem({super.key, required this.notes});
   final NoteModel notes;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -40,6 +42,7 @@ class NotesItem extends StatelessWidget {
               ),
               trailing: Icon(Icons.delete, color: Colors.black),
             ),
+
             Text(notes.date, style: TextStyle(color: Colors.black)),
           ],
         ),
